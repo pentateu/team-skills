@@ -3,9 +3,9 @@ name: rust-standards
 description: Use when writing, editing, or reviewing Rust code in crates/** (domain, db, api, protocol, orchestrator, llm). Covers API design, error handling, async/sqlx/serde idioms, performance, testing, clippy lints, and cargo workspace conventions. Load before editing any .rs file.
 ---
 
-# Rust standards for HomeTutor
+# Rust standards
 
-The full sourced rules are in `docs/rust-best-practices-research.md`. **Read that file before writing or editing Rust in this repo.** Below is the index of what's covered so you know what to look for.
+If your repository carries the companion Rust research doc, read it before writing or editing Rust — this page is the index of what's covered so you know what to look for.
 
 ## What the research doc covers (by section)
 

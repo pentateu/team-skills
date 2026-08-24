@@ -15,8 +15,8 @@ Use this skill when the user wants UI/UX help and has not invoked an Impeccable 
 
 ## Project context
 
-- **Web apps:** React 19 + Vite — `apps/lesson-web`, `apps/ops-web`
-- **iOS app:** SwiftUI — `apps/student-ios`
+- **Web apps:** React 19 + Vite — under the repo's `apps/` directory
+- **iOS app:** SwiftUI — under the repo's `apps/` directory
 - **Design docs:** Impeccable uses `PRODUCT.md` and `DESIGN.md` at repo root (create via `/impeccable init` or `/impeccable document`)
 
 ## Protocol

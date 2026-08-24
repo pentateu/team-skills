@@ -1,9 +1,9 @@
 ---
 name: ios-swift-standards
-description: Use when writing, editing, or reviewing Swift or SwiftUI code in apps/student-ios. Covers Swift API design guidelines, async/await, SwiftUI view patterns, WKWebView bridges, AVFoundation/Speech/Camera, Swift Testing, SwiftLint rules, and Info.plist privacy keys. Load before editing any .swift file.
+description: Use when writing, editing, or reviewing Swift or SwiftUI code in the repository's iOS app. Covers Swift API design guidelines, async/await, SwiftUI view patterns, WKWebView bridges, AVFoundation/Speech/Camera, Swift Testing, SwiftLint rules, and Info.plist privacy keys. Load before editing any .swift file.
 ---
 
-# iOS + Swift + SwiftUI standards for HomeTutor
+# iOS + Swift + SwiftUI standards
 
 The full sourced rules are in `docs/ios-best-practices-research.md`. **Read that file before writing or editing iOS code.** Below is the index.
 
@@ -26,4 +26,4 @@ The full sourced rules are in `docs/ios-best-practices-research.md`. **Read that
 When editing iOS code:
 - Read the relevant section(s) from `docs/ios-best-practices-research.md` for the construct you're working with.
 - Follow the existing codebase conventions first; the standards doc second.
-- After editing, build via `xcodebuild -scheme HomeTutor -destination 'platform=iOS Simulator,name=iPhone 15'` if Xcode is available; otherwise flag that you can't verify.
+- After editing, build via `xcodebuild -scheme <APP_SCHEME> -destination 'platform=iOS Simulator,name=<SIM>'` (use the project's scheme/simulator) if Xcode is available; otherwise flag that you can't verify.

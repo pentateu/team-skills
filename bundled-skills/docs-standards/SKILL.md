@@ -3,9 +3,9 @@ name: docs-standards
 description: Use when writing, editing, organizing, reviewing, or cleaning up markdown in this repo — docs/**, docs/agents/**, AGENTS.md, skills, plan/review lifecycle files. Covers Diátaxis doc taxonomy, technical writing heuristics, token economy for agent-consumed docs, and the plan/review/ledger lifecycle. Load before editing any .md file outside of source code.
 ---
 
-# Documentation standards for HomeTutor
+# Documentation standards
 
-The full sourced rules are in `docs/docs-standards-research.md`. **Read it before writing or editing any markdown in this repo.** Below is the working index.
+If your repository carries a documentation-standards research doc (check its `docs/`), read it before writing or editing any markdown — this page is the working index. Adapt named paths and lifecycle states to your repo's conventions.
 
 ## What the research doc covers
 

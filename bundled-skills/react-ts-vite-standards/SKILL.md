@@ -1,11 +1,11 @@
 ---
 name: react-ts-vite-standards
-description: Use when writing, editing, or reviewing TypeScript or React code in apps/lesson-web, apps/parent-web, or apps/ops-web. Covers TS strict tsconfig, React 19 hooks/actions, zod, Vite, WebSocket-in-React, unified/markdown rendering, RTL/Vitest testing, ESLint/Prettier, and a11y. Load before editing any .ts/.tsx file in the web apps.
+description: Use when writing, editing, or reviewing TypeScript or React code in the monorepo's web apps. Covers TS strict tsconfig, React 19 hooks/actions, zod, Vite, WebSocket-in-React, unified/markdown rendering, RTL/Vitest testing, ESLint/Prettier, and a11y. Load before editing any .ts/.tsx file in the web apps.
 ---
 
-# React + TS + Vite standards for HomeTutor
+# React + TS + Vite standards
 
-The full sourced rules are in `docs/react-ts-vite-best-practices.md`. **Read that file before writing or editing web app code.** Below is the index.
+If your repository carries the companion web-standards research doc, read it before writing or editing web app code — this page is the index.
 
 ## What the research doc covers (by section)
 

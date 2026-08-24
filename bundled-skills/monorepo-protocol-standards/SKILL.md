@@ -3,9 +3,9 @@ name: monorepo-protocol-standards
 description: Use when writing, editing, or reviewing the shared WebSocket protocol between TypeScript (packages/protocol) and Rust (crates/protocol). Covers zod schema design, envelope protocol, cross-language parity, bun workspaces, package publishing, monorepo tooling, and error handling at the WS boundary. Load before editing any protocol file in either language.
 ---
 
-# Monorepo + shared protocol standards for HomeTutor
+# Monorepo + shared protocol standards
 
-The full sourced rules are in `docs/monorepo-protocol-best-practices-research.md`. **Read that file before writing or editing protocol code or monorepo config.** Below is the index.
+If your repository carries the companion protocol research doc, read it before writing or editing protocol code or monorepo config — this page is the index.
 
 ## What the research doc covers (by section)
 
@@ -24,5 +24,5 @@ The full sourced rules are in `docs/monorepo-protocol-best-practices-research.md
 When editing protocol code:
 - Read the relevant section(s) from `docs/monorepo-protocol-best-practices-research.md` for the construct you're working with.
 - If you add/change a message type, update **both** `packages/protocol/src/index.ts` (zod) and `crates/protocol/src/lib.rs` (serde). One is canonical, the other is the mirror — keep them in sync.
-- After editing, run `cargo check -p home-tutor-protocol` (or `cargo check --workspace`) and `cd packages/protocol && ./node_modules/.bin/tsc --noEmit` (or the app-level typecheck).
+- After editing, run `cargo check -p <protocol-crate>` (or `cargo check --workspace`) and typecheck the TS package (`cd packages/protocol && ./node_modules/.bin/tsc --noEmit`, or the app-level typecheck).
 - If you add a new message type, add a round-trip test in both sides.
