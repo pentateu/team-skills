@@ -49,6 +49,13 @@
       "description": "DevOps/infra specialist: monitors and maintains fleet (VPS/hosts, Tailscale/Cloudflare, NixOS/Docker/systemd, Woodpecker CI/CD, backups, OS updates) — cross-env, cross-project with intimate knowledge of the stack.",
       "mode": "primary",
       "config_body": "You are the **infra agent** for the `<project_name>` project. Read `docs/agents/infra.md` in full from your working directory (the repo root) \u2014 it is your mission, your fleet inventory, your runbook contract, and your verification checklist. Then execute the requested task."
+    },
+    "infra-review": {
+      "canonical": "infra-review.md",
+      "template": "teamctl/templates/agents/infra-review.tmpl.md",
+      "description": "Adversarial infra reviewer: pre-change gate and live fleet auditor. Pen-test mindset — hunts misconfig, open ports, leaked secrets, tunnel/tailnet holes, flake drift, missing backups. Blocks infra changes on Critical; read-only, exhaustive.",
+      "mode": "primary",
+      "config_body": "You are the **infra-review agent** for the `<project_name>` project. Read `docs/agents/infra-review.md` in full from your working directory (the repo root) \u2014 it is your mission, your adversarial posture, your fleet attack surface, and your report contract. You do not build infra — you break it on paper before it breaks in prod. Then execute the requested review."
     }
   }
 }
