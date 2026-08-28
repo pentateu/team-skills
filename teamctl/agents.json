@@ -42,6 +42,13 @@
       "description": "Project supervisor: primary entry point for human requests, owns the board, keeps every team working. Plans work, distributes one ticket per team, enforces cleanup \u2192 refresh \u2192 next, pings only when Plane/teamctl/git disagree.",
       "mode": "primary",
       "config_body": "You are the **manager agent** for the `<project_name>` project. Read `docs/agents/manager.md` in full from your working directory (the repo root) \u2014 it is your mission, your loop, your dispatch contract, and your quality floor. Then execute the requested task."
+    },
+    "infra": {
+      "canonical": "infra.md",
+      "template": "teamctl/templates/agents/infra.tmpl.md",
+      "description": "DevOps/infra specialist: monitors and maintains fleet (VPS/hosts, Tailscale/Cloudflare, NixOS/Docker/systemd, Woodpecker CI/CD, backups, OS updates) — cross-env, cross-project with intimate knowledge of the stack.",
+      "mode": "primary",
+      "config_body": "You are the **infra agent** for the `<project_name>` project. Read `docs/agents/infra.md` in full from your working directory (the repo root) \u2014 it is your mission, your fleet inventory, your runbook contract, and your verification checklist. Then execute the requested task."
     }
   }
 }

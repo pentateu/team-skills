@@ -193,9 +193,10 @@ install_skills() {
   local repo_abs dest dir
   repo_abs="$(cd "$repo" && pwd)"
   dest="$repo_abs/.opencode/skills"
+  mkdir -p "$dest"
   case "$set" in
     standards)
-      for dir in docs-standards rust-standards react-ts-vite-standards ios-swift-standards \
+      for dir in docs-standards infra-ops rust-standards react-ts-vite-standards ios-swift-standards \
                  monorepo-protocol-standards playwright-best-practices playwright-cli \
                  agent-browser webapp-testing; do
         [[ -d "$SKILLS_BUNDLE/$dir" ]] && cp -R "$SKILLS_BUNDLE/$dir" "$dest/"
